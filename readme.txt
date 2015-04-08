@@ -2,7 +2,7 @@
 Contributors: donncha, automattic
 Tags: performance,caching,wp-cache,wp-super-cache,cache
 Tested up to: 3.5.1
-Stable tag: 1.3.2
+Stable tag: 1.3.3
 Requires at least: 3.0
 
 A very fast caching engine for WordPress that produces static html files.
@@ -56,10 +56,13 @@ The cache directory, usually wp-content/cache/ is only for temporary files. Do n
 
 == Upgrade Notice ==
 
-= 1.3.2 =
-IMPORTANT - Dynamic cached content now disabled by default. See advanced settings page. Better mangling of the mfunc tag in comments. Jetpack Mobile Theme support.
+= 1.3.3 =
+Backport fix for XSS in settings page.
 
 == Changelog ==
+
+= 1.3.3 =
+* Backport fix for XSS in settings page.
 
 = 1.3.2 =
 * Any mfunc/mclude/dynamic-cached-content tags in comments are now removed.

@@ -1,8 +1,8 @@
 === WP Super Cache ===
 Contributors: donncha, automattic
 Tags: performance,caching,wp-cache,wp-super-cache,cache
-Tested up to: 3.2.1
-Stable tag: 1.0
+Tested up to: 3.3.1
+Stable tag: 1.0.1
 Requires at least: 3.0
 
 A very fast caching engine for WordPress that produces static html files.
@@ -54,10 +54,27 @@ Interested in translating WP Super Cache to your language? Grab the [development
 
 == Upgrade Notice ==
 
-= 0.9.9.9 =
-Serve repeated static files from the same CDN hostname, translations, lots of bug fixes
+= 1.0.1 =
+Backported fix for XSS in cache file listing from version 1.4.3
 
 == Changelog ==
+
+= 1.0.1 =
+* Backported fix for XSS in cache file listing from version 1.4.3
+
+= 1.0 =
+* Removed AddDefaultCharset .htaccess rule
+* Fixed problem with blogs in a folder and don't have a trailing slash
+* New scheduling of garbage collection
+* Added a "Delete cache" link to admin bar to delete cache of current page.
+* Updated documentation
+* Sorry Digg, Stephen Fry power now!
+* Updated translations
+* Preload taxonomies and all post types except revisionsand nav menu items
+* Fixed previews by logged in users.
+* Added option to make logged in users anonymous
+* Use WP 3.0 variables to detect multisite installs
+* Hash filenames so files are served from the same CDNs
 
 = 0.9.9.9 =
 * Fixed typo, is_front_page.

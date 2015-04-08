@@ -2,7 +2,7 @@
 Contributors: donncha, automattic
 Tags: performance,caching,wp-cache,wp-super-cache,cache
 Tested up to: 3.4.2
-Stable tag: 1.2
+Stable tag: 1.2.1
 Requires at least: 3.0
 
 A very fast caching engine for WordPress that produces static html files.
@@ -56,10 +56,13 @@ The cache directory, usually wp-content/cache/ is only for temporary files. Do n
 
 == Upgrade Notice ==
 
-= 1.2 =
-Lots of bugfixes, garbage collection improved, more details at http://ocaoimh.ie/y/3i
+= 1.2.1 =
+Backported fix for XSS in settings page.
 
 == Changelog ==
+
+= 1.2.1 =
+Backported fix for XSS in settings page.
 
 = 1.2 =
 * Garbage collection of old cache files is significantly improved. I added a scheduled job that keeps an eye on things and restarts the job if necessary. Also, if you enable caching from the Easy page garbage collection will be enabled too.
